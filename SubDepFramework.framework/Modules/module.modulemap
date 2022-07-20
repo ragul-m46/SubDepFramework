@@ -1,0 +1,11 @@
+framework module SubDepFramework {
+  umbrella header "SubDepFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module SubDepFramework.Swift {
+    header "SubDepFramework-Swift.h"
+    requires objc
+}
